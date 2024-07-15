@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: "Hello World"
         run: echo "Hello World!"
+      - name: "Nice to meet you"
+        if: github.event_name == 'pull_request'
+        run: echo "Nice to meet you"
   goodbye-moon:
     runs-on: ubuntu-latest
     steps:
