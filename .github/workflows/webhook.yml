@@ -1,0 +1,11 @@
+name: "Test webhook"
+on:
+  workflow_dispatch:
+    type: webhook
+
+jobs:
+  log-the-inputs:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Triggered by webhook"
