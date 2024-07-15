@@ -1,7 +1,8 @@
 name: "Test webhook"
 on:
-  workflow_dispatch:
-    type: webhook
+  respository_dispatch:
+    types:
+      - webhook
 
 jobs:
   log-the-inputs:
