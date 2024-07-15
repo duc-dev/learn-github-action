@@ -18,6 +18,11 @@ on:
         description: "Environment to run tests against"
         type: environment
         required: true
+        options:
+          - dev
+          - testing
+          - staging
+          - production
 
 jobs:
   log-the-inputs:
